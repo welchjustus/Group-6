@@ -21,3 +21,4 @@ def alu(a: LogicArray, b: LogicArray, alucontrol: LogicArray) -> [LogicArray, Lo
     ret1[0] = (~alucontrol[1]) & ~(a[31] ^ b[31] ^ alucontrol[0]) & (a[31] ^ ret_sum[31])
 
     return [ret0[31:0], ret1]
+    
